@@ -22,3 +22,15 @@ time.sleep(5)
 
 # Выключаем двигатель 1.
 GPIO.output(4, GPIO.LOW)
+
+# ждем 10 секунд.
+time.sleep(10)
+
+# Включаем вращение двигателя 1 в другую сторону.
+GPIO.output(17, GPIO.HIGH)
+
+# ждем 5 секунд.
+time.sleep(5)
+
+# Выключаем двигатель 1.
+GPIO.output(17, GPIO.LOW)
